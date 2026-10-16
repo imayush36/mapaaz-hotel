@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAPAAZ Luxury Hotel &amp; Fine Dining | 5-Star Boutique Experience</title>
+  <meta name="description" content="Discover true luxury, fine dining, and hospitality at Mapaaz Luxury Hotel. Located in the heart of the city with Michelin-inspired restaurant, modern rooms, and world-class amenities.">
+  
+  <!-- Favicon Monogram -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 95,50 50,95 5,50' fill='none' stroke='%23b88a58' stroke-width='8'/><polygon points='50,20 80,50 50,80 20,50' fill='%23b88a58'/></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION (PIXEL-PERFECT REFINED NAVBAR)
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container navbar-container">
+      <!-- Monogram + Logo -->
+      <a href="#hero" class="site-logo" id="brandLogo">
+        <svg class="logo-icon-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <path d="M50 8 L92 50 L50 92 L8 50 Z" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M50 24 L76 50 L50 76 L24 50 Z" stroke-width="5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+          <circle cx="50" cy="50" r="10" fill="currentColor"/>
+        </svg>
+        <span>MAPAAZ</span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#rooms" class="nav-link">Rooms &amp; Suites</a>
+        <a href="#restaurant" class="nav-link">Restaurant</a>
+        <a href="#location" class="nav-link">Location</a>
+        <a href="#facilities" class="nav-link">Amenities</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Reservation Action Button -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="btn-reservation" id="openReservationBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          <span>Reservation</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Fullscreen Luxury Slides + Center Typography)
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <!-- Background Slides -->
+      <div class="hero-slider" id="heroSlider">
+        <div class="hero-slide active" style="background-image: url('assets/images/hero.jpg');" data-index="0"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/restaurant-main.jpg');" data-index="1"></div>
+        <div class="hero-slide" style="background-image: url('assets/images/room-presidential.jpg');" data-index="2"></div>
+      </div>
+
+      <!-- Arrow Navigation -->
+      <button class="hero-nav-arrow hero-nav-prev" id="heroPrevBtn" aria-label="Previous Slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button class="hero-nav-arrow hero-nav-next" id="heroNextBtn" aria-label="Next Slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+      <!-- Vertical Scroll Indicator (Right Edge) -->
+      <a href="#highlights" class="hero-scroll-indicator">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </a>
+
+      <!-- Center Hero Content -->
+      <div class="hero-center-content">
+        <!-- 5 Stars -->
+        <div class="hero-stars">
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+          <span>&#9733;</span>
+        </div>
+
+        <h1 class="hero-title">MAPAAZ LUXURY HOTEL</h1>
+        <p class="hero-subtitle">
+          Located in the heart of the city, this luxurious, modern hotel offers top-notch amenities for a perfect stay.
+        </p>
+        <a href="#welcome" class="hero-explore-cta">
+          <span>Explore</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hero Bottom Bar -->
+      <div class="hero-bottom-bar">
+        <div class="container hero-bottom-content">
+          <!-- Left Badge & Story Button -->
+          <div class="hero-since-badge">
+            <span class="since-text">Since 1998 &bull; 25+ Years of Operation</span>
+            <button class="since-btn" id="heroStoryBtn">
+              <span>Mapaaz Story</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Right Booking & Rating Stats -->
+          <div class="hero-stats-group">
+            <div class="hero-stat-item">
+              <span class="stat-number" data-target="16400">+16.4K</span>
+              <span class="stat-label">Bookings</span>
+            </div>
+            <div class="hero-stat-item">
+              <span class="stat-number">4.9/5</span>
+              <span class="rating-star-icon">&#9733;</span>
+              <span class="stat-label">3.5K Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HIGHLIGHTS / VALUE PROPOSITIONS (4 Columns)
+         ========================================================================== -->
+    <section class="highlights-section" id="highlights">
+      <div class="container">
+        <div class="highlights-grid">
+          
+          <!-- Item 1: Location -->
+          <div class="highlight-card reveal">
+            <div class="highlight-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Located in Tamkuhi Raj</h3>
+            <p class="highlight-desc">Centrally situated in Tamkuhi Raj, Kushinagar, Uttar Pradesh for easy access and convenience.</p>
+          </div>
+
+          <!-- Item 2: Luxury Comfort -->
+          <div class="highlight-card reveal reveal-delay-1">
+            <div class="highlight-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 12h20"></path>
+                <path d="M7 12v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-5"></path>
+                <path d="M4 8l3-4h10l3 4"></path>
+                <circle cx="8" cy="4" r="1"></circle>
+                <circle cx="16" cy="4" r="1"></circle>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Luxurious, modern, and comfortable</h3>
+            <p class="highlight-desc">Experience a luxurious, modern, and fully equipped space for comfort.</p>
+          </div>
+
+          <!-- Item 3: Friendly Staff -->
+          <div class="highlight-card reveal reveal-delay-2">
+            <div class="highlight-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M5.5 21v-2a6.5 6.5 0 0 1 13 0v2"></path>
+                <path d="M12 11v3"></path>
+                <path d="M10 13h4"></path>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Friendly and welcoming staff</h3>
+            <p class="highlight-desc">Our friendly and welcoming staff ensures a delightful stay every time.</p>
+          </div>
+
+          <!-- Item 4: Best Prices -->
+          <div class="highlight-card reveal reveal-delay-3">
+            <div class="highlight-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="highlight-title">Best prices and great offers</h3>
+            <p class="highlight-desc">Enjoy unbeatable prices with fantastic offers tailored just for you.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WELCOME / STORY SECTION
+         ========================================================================== -->
+    <section class="welcome-section" id="welcome">
+      <div class="container">
+        <div class="welcome-grid">
+          <!-- Left: Staggered Dual Photos -->
+          <div class="welcome-images-wrapper reveal">
+            <div class="welcome-img-card welcome-img-1">
+              <img src="assets/images/welcome-1.jpg" alt="Mapaaz Luxury Suite Bedroom" loading="lazy">
+            </div>
+            <div class="welcome-img-card welcome-img-2">
+              <img src="assets/images/welcome-2.jpg" alt="Mapaaz Penthouse Interior" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Right: Narrative & CTA -->
+          <div class="welcome-content-text reveal reveal-delay-1">
+            <span class="section-eyebrow">WELCOME TO MAPAAZ</span>
+            <h2 class="welcome-heading">Luxury hotel &amp; dining in Tamkuhi Raj.</h2>
+            <p class="welcome-desc">
+              Mapaaz Luxury Hotel &amp; Restaurant, in Tamkuhi Raj, Kushinagar, Uttar Pradesh, offers modern luxurious rooms, bespoke suites, and Michelin-inspired dining. Enjoy premium facilities, pristine ambience, and attentive service for an unforgettable stay. Discover true luxury and warm hospitality at Mapaaz.
+            </p>
+            <button class="btn-read-more" id="welcomeReadMoreBtn">
+              <span>READ MORE</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Social Proof / Review Badges Row -->
+        <div class="welcome-reviews-bar reveal reveal-delay-2">
+          <!-- Booking.com -->
+          <div class="review-badge-item">
+            <div class="review-brand-logo review-brand-booking">B.</div>
+            <div>
+              <div class="review-info-score">4.9/5 <span style="color:#ffbe44">&#9733;</span> <span class="review-tag-excellent">Excellent</span></div>
+              <div class="review-info-count">2.5K Reviews on Booking</div>
+            </div>
+          </div>
+
+          <!-- Agoda -->
+          <div class="review-badge-item">
+            <div class="review-brand-logo review-brand-agoda">a.</div>
+            <div>
+              <div class="review-info-score">5/5 <span style="color:#ffbe44">&#9733;</span> <span class="review-tag-excellent">Excellent</span></div>
+              <div class="review-info-count">4.1K Reviews on Agoda</div>
+            </div>
+          </div>
+
+          <!-- TripAdvisor -->
+          <div class="review-badge-item">
+            <div class="review-brand-logo review-brand-tripadvisor">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <circle cx="8" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="16" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <circle cx="8" cy="12" r="1.2"/>
+                <circle cx="16" cy="12" r="1.2"/>
+                <path d="M12 14c-1.5 2-3 2-3 2h6s-1.5 0-3-2z"/>
+                <path d="M3 8a9 9 0 0 1 18 0" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="review-info-score">4.8/5 <span style="color:#ffbe44">&#9733;</span> <span class="review-tag-excellent" style="color:#008552">Good</span></div>
+              <div class="review-info-count">2.4K Reviews on Tripadvisor</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ROOM & SUITE COLLECTION (Interactive Slider)
+         ========================================================================== -->
+    <section class="rooms-section" id="rooms">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal">
+          <span class="section-eyebrow">EXQUISITE AND LUXURIOUS</span>
+          <h2 class="section-main-heading">Room and suite collection</h2>
+        </div>
+
+        <!-- Room Carousel Outer Container -->
+        <div class="room-slider-container">
+          <!-- Left/Right Nav Arrows -->
+          <button class="room-slider-arrow room-arrow-prev" id="roomPrevBtn" aria-label="Previous Room">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="room-slider-arrow room-arrow-next" id="roomNextBtn" aria-label="Next Room">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+
+          <!-- Dynamic Room Card Container -->
+          <div class="room-card-wrapper reveal" id="roomCardWrapper">
+            <!-- Left Info Column -->
+            <div class="room-info-column">
+              <div class="room-price-tag">
+                From <span class="room-price-val" id="roomPriceDisplay">$210</span> /NIGHT
+              </div>
+              <h3 class="room-title" id="roomTitleDisplay">Standard room</h3>
+              <p class="room-desc" id="roomDescDisplay">
+                Cozy and modern, this room offers essential amenities for a comfortable stay, perfect for solo travelers or couples seeking relaxation.
+              </p>
+
+              <!-- Specs Grid (2 columns) -->
+              <div class="room-specs-grid" id="roomSpecsGrid">
+                <!-- Size -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+                  <span id="specSize">ROOM SIZE 28 M²</span>
+                </div>
+                <!-- View -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                  <span id="specView">STREET VIEW</span>
+                </div>
+                <!-- Bed -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 19h20M2 8v11M22 8v11M4 14h16M4 8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6H4V8z"/></svg>
+                  <span id="specBed">1 KING BED</span>
+                </div>
+                <!-- Smoking -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+                  <span id="specSmoking">SMOKING - NO</span>
+                </div>
+                <!-- Guests -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span id="specGuests">2 ADULTS - 1 CHILD</span>
+                </div>
+                <!-- Breakfast -->
+                <div class="room-spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+                  <span id="specBreakfast">BREAKFAST - YES</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="room-actions">
+                <button class="btn-book-room" id="roomBookBtn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>BOOK NOW</span>
+                </button>
+                <button class="btn-view-room" id="roomViewBtn">
+                  <span>VIEW ROOM</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Photo Column -->
+            <div class="room-photo-column">
+              <img src="assets/images/room-standard.jpg" alt="Mapaaz Standard Room" id="roomPhotoDisplay">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         DEDICATED RESTAURANT & FINE DINING SECTION
+         ========================================================================== -->
+    <section class="restaurant-section" id="restaurant">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="restaurant-header-wrap reveal">
+          <span class="section-eyebrow">CULINARY EXCELLENCE &amp; FINE DINING</span>
+          <h2 class="restaurant-heading">The Mapaaz Restaurant &amp; Lounge</h2>
+          <p class="restaurant-sub-desc">
+            An exquisite gastronomic journey curated by Michelin-trained master chefs, pairing seasonal artisanal ingredients with vintage cellar selections in an opulent setting.
+          </p>
+        </div>
+
+        <!-- Visual Composition Grid -->
+        <div class="restaurant-gallery-grid reveal reveal-delay-1">
+          <!-- Main Hall Photo -->
+          <div class="restaurant-main-card">
+            <img src="assets/images/restaurant-main.jpg" alt="Mapaaz Fine Dining Restaurant Salon" loading="lazy">
+            <div class="restaurant-card-badge">
+              <h4>The Grand Dining Salon</h4>
+              <p>Michelin-Caliber Gastronomy &bull; Private Chef's Table</p>
+            </div>
+          </div>
+
+          <!-- Side Cards: Signature Dishes & Bar -->
+          <div class="restaurant-side-cards">
+            <!-- Signature Plating -->
+            <div class="restaurant-side-item">
+              <img src="assets/images/restaurant-dish.jpg" alt="Artisanal Gourmet Cuisine" loading="lazy">
+              <div class="restaurant-side-overlay">
+                <h5>Signature Tasting Menus</h5>
+                <span>A5 Wagyu &bull; Black Truffle &bull; Sea Caviar</span>
+              </div>
+            </div>
+
+            <!-- Cocktail & Wine Bar -->
+            <div class="restaurant-side-item">
+              <img src="assets/images/restaurant-bar.jpg" alt="Mapaaz Sky Lounge and Cocktail Bar" loading="lazy">
+              <div class="restaurant-side-overlay">
+                <h5>Sky Lounge &amp; Vintage Cellar</h5>
+                <span>Bespoke Mixology &bull; Grand Cru Wine Collection</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Hours Strip -->
+        <div class="restaurant-hours-strip reveal reveal-delay-2">
+          <!-- Morning -->
+          <div class="dining-hour-item">
+            <div class="dining-hour-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+            </div>
+            <div>
+              <div class="dining-hour-title">Breakfast &amp; Brunch</div>
+              <div class="dining-hour-time">06:30 AM &ndash; 11:00 AM</div>
+            </div>
+          </div>
+
+          <!-- Lunch -->
+          <div class="dining-hour-item">
+            <div class="dining-hour-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+            </div>
+            <div>
+              <div class="dining-hour-title">Gourmet Lunch</div>
+              <div class="dining-hour-time">12:30 PM &ndash; 03:30 PM</div>
+            </div>
+          </div>
+
+          <!-- Dinner -->
+          <div class="dining-hour-item">
+            <div class="dining-hour-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            </div>
+            <div>
+              <div class="dining-hour-title">Fine Dining Dinner</div>
+              <div class="dining-hour-time">07:00 PM &ndash; 11:30 PM</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="restaurant-action-buttons reveal reveal-delay-3">
+          <button class="btn-reserve-table" id="reserveTableBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Reserve A Table</span>
+          </button>
+          <button class="btn-view-menu" id="viewMenuBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="8" y1="6" x2="21" y2="6"></line>
+              <line x1="8" y1="12" x2="21" y2="12"></line>
+              <line x1="8" y1="18" x2="21" y2="18"></line>
+              <line x1="3" y1="6" x2="3.01" y2="6"></line>
+              <line x1="3" y1="12" x2="3.01" y2="12"></line>
+              <line x1="3" y1="18" x2="3.01" y2="18"></line>
+            </svg>
+            <span>Explore Dining Menu</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FACILITIES AND AMENITIES SECTION (6 Grid)
+         ========================================================================== -->
+    <section class="facilities-section" id="facilities">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header-center reveal">
+          <span class="section-eyebrow">MODERN AND COMFORTABLE</span>
+          <h2 class="section-main-heading">Facilities and amenities</h2>
+        </div>
+
+        <!-- 6 Item Grid -->
+        <div class="facilities-grid">
+          
+          <!-- 1. Wifi -->
+          <div class="facility-item reveal">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                <line x1="12" y1="20" x2="12.01" y2="20"></line>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4>High Speed Wifi</h4>
+              <p>Enjoy seamless, high-speed internet access throughout the hotel.</p>
+            </div>
+          </div>
+
+          <!-- 2. Parking Space -->
+          <div class="facility-item reveal reveal-delay-1">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="4"></rect>
+                <path d="M9 17V7h4a3 3 0 0 1 0 6H9"></path>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4>Parking Space</h4>
+              <p>Ample and secure parking space provided for all hotel guests.</p>
+            </div>
+          </div>
+
+          <!-- 3. Restaurant & Bar -->
+          <div class="facility-item reveal reveal-delay-2" style="cursor: pointer;" onclick="document.getElementById('restaurant').scrollIntoView({behavior: 'smooth'})">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4 style="display: flex; align-items: center; justify-content: space-between;">
+                Restaurant &amp; Bar
+                <span style="font-size: 0.72rem; color: var(--color-gold-primary); letter-spacing: 0.05em;">EXPLORE &rarr;</span>
+              </h4>
+              <p>Savor Michelin-inspired dishes and artisan cocktails at our elegant dining room.</p>
+            </div>
+          </div>
+
+          <!-- 4. Spa Center -->
+          <div class="facility-item reveal">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z"></path>
+                <circle cx="12" cy="9" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4>Spa Center</h4>
+              <p>Indulge in a variety of relaxing and rejuvenating treatments at our spa.</p>
+            </div>
+          </div>
+
+          <!-- 5. Fitness Center -->
+          <div class="facility-item reveal reveal-delay-1">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 5v14M18 5v14M2 9v6M22 9v6M6 12h12"></path>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4>Fitness Center</h4>
+              <p>Stay active with state-of-the-art fitness equipment in our modern gym.</p>
+            </div>
+          </div>
+
+          <!-- 6. Swimming Pool -->
+          <div class="facility-item reveal reveal-delay-2">
+            <div class="facility-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"></path>
+                <path d="M2 22c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3 1.5 4.5 0 3 1.5 4.5 0"></path>
+                <path d="M16 10l-4-4-2 2-3-3"></path>
+                <circle cx="7" cy="4" r="1.5"></circle>
+              </svg>
+            </div>
+            <div class="facility-content">
+              <h4>Swimming Pool</h4>
+              <p>Refresh and unwind in our pristine outdoor &amp; heated indoor swimming pool.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         HOTEL VIDEO SHOWCASE SECTION
+         ========================================================================== -->
+    <section class="video-showcase-section" id="explore">
+      <img src="assets/images/pool-luxury.jpg" alt="Mapaaz Luxury Pool and Spa" class="video-bg-media">
+      <div class="video-overlay"></div>
+
+      <div class="video-content reveal">
+        <span class="video-eyebrow">HOTEL VIDEO</span>
+        <h2 class="video-title">Explore Mapaaz Luxury Hotel</h2>
+        
+        <!-- Pulsing Play Button -->
+        <button class="video-play-btn" id="videoPlayBtn" aria-label="Play Hotel Video Tour">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LOCATION & CONTACT SECTION (TAMKUHI RAJ, KUSHINAGAR)
+         ========================================================================== -->
+    <section class="location-contact-section" id="location">
+      <div class="container">
+        <div class="location-grid">
+          <!-- Left Info Card -->
+          <div class="location-info-card reveal">
+            <span class="section-eyebrow">LOCATION &amp; CONTACT</span>
+            <h2 class="location-title">Visit Mapaaz Hotel &amp; Restaurant</h2>
+            
+            <div class="location-details-list">
+              <!-- Address -->
+              <div class="location-item">
+                <div class="location-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-item-label">Address</div>
+                  <div class="location-item-val">
+                    Tamkuhi Raj , Kushinagar , Uttar Pradesh
+                  </div>
+                </div>
+              </div>
+
+              <!-- Phone -->
+              <div class="location-item">
+                <div class="location-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-item-label">Direct Helpline &amp; Reservations</div>
+                  <div class="location-item-val">
+                    <a href="tel:+917570070035">+91 75700 70035</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="location-item">
+                <div class="location-item-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="location-item-label">Inquiries &amp; Dining</div>
+                  <div class="location-item-val">
+                    <a href="mailto:reservations@mapaazhotel.com">reservations@mapaazhotel.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="location-actions">
+              <a href="tel:+917570070035" class="btn-contact-call">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>Call 7570070035</span>
+              </a>
+              <a href="https://maps.google.com/?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer" class="btn-contact-direction">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                <span>Get Directions</span>
+              </a>
+              <a href="https://wa.me/917570070035?text=Hello%20Mapaaz%20Hotel,%20I%20would%20like%20to%20inquire%20about%20booking%20and%20dining." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.785.836 2.796.837 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.585-5.824-5.768-5.824zm3.387 8.188c-.144.405-.837.774-1.17.824-.312.045-.634.053-.996-.063-.238-.076-.554-.19-1.002-.384-1.902-.823-3.136-2.757-3.23-2.883-.095-.127-.775-1.031-.775-1.966 0-.935.489-1.394.663-1.584.175-.19.381-.238.508-.238.127 0 .254.001.365.006.118.005.277-.045.433.329.16.386.544 1.328.591 1.425.048.095.08.207.016.334-.064.127-.095.207-.19.318-.095.111-.2.248-.286.334-.095.095-.195.198-.084.389.111.19.493.813 1.058 1.317.728.649 1.341.85 1.531.945.19.095.302.08.413-.048.111-.127.476-.556.603-.746.127-.19.254-.159.429-.095.175.064 1.11.523 1.301.618.19.095.317.143.365.222.048.079.048.46-.096.865z"/></svg>
+                <span>WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Map Embed -->
+          <div class="map-embed-wrapper reveal reveal-delay-1">
+            <iframe 
+              src="https://maps.google.com/maps?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+              title="Mapaaz Luxury Hotel Location Map" 
+              loading="lazy" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Column -->
+        <div class="footer-col-brand">
+          <a href="#hero" class="site-logo">
+            <svg class="logo-icon-svg" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+              <path d="M50 8 L92 50 L50 92 L8 50 Z" stroke-width="6" stroke-linejoin="round"/>
+              <path d="M50 24 L76 50 L50 76 L24 50 Z" stroke-width="5" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+              <circle cx="50" cy="50" r="10" fill="currentColor"/>
+            </svg>
+            <span>MAPAAZ</span>
+          </a>
+          <p class="footer-brand-desc">
+            An oasis of refined luxury, Michelin-inspired dining, and bespoke hospitality in Tamkuhi Raj, Kushinagar, Uttar Pradesh.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://wa.me/917570070035" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.785.836 2.796.837 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.585-5.824-5.768-5.824zm3.387 8.188c-.144.405-.837.774-1.17.824-.312.045-.634.053-.996-.063-.238-.076-.554-.19-1.002-.384-1.902-.823-3.136-2.757-3.23-2.883-.095-.127-.775-1.031-.775-1.966 0-.935.489-1.394.663-1.584.175-.19.381-.238.508-.238.127 0 .254.001.365.006.118.005.277-.045.433.329.16.386.544 1.328.591 1.425.048.095.08.207.016.334-.064.127-.095.207-.19.318-.095.111-.2.248-.286.334-.095.095-.195.198-.084.389.111.19.493.813 1.058 1.317.728.649 1.341.85 1.531.945.19.095.302.08.413-.048.111-.127.476-.556.603-.746.127-.19.254-.159.429-.095.175.064 1.11.523 1.301.618.19.095.317.143.365.222.048.079.048.46-.096.865z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col-links">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#rooms">Rooms &amp; Suites</a></li>
+            <li><a href="#restaurant">The Restaurant</a></li>
+            <li><a href="#location">Location &amp; Map</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#explore">Virtual Tour</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info (TAMKUHI RAJ, KUSHINAGAR) -->
+        <div class="footer-col-links">
+          <h4 class="footer-col-title">Contact &amp; Dining</h4>
+          <ul class="footer-links-list">
+            <li><a href="tel:+917570070035" style="font-weight: 700; color: #ffffff;">+91 75700 70035</a></li>
+            <li><a href="mailto:reservations@mapaazhotel.com">reservations@mapaazhotel.com</a></li>
+            <li><a href="https://maps.google.com/?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer">Tamkuhi Raj , Kushinagar</a></li>
+            <li><a href="https://maps.google.com/?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer">Uttar Pradesh, India</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Subscription -->
+        <div class="footer-col-newsletter">
+          <h4 class="footer-col-title">Privilege Club</h4>
+          <p class="footer-newsletter-text">
+            Subscribe to receive exclusive seasonal degustation invites, dining discounts, and suite upgrades.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email address" class="newsletter-input" required>
+            <button type="submit" class="newsletter-submit-btn">Join</button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Mapaaz Luxury Hotel &amp; Fine Dining Resorts. Tamkuhi Raj, Kushinagar, UP.</p>
+        <p>Helpline: +91 75700 70035 &bull; Michelin Excellence</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       RESERVATION MODAL (DUAL: ROOMS & TABLE BOOKING)
+       ========================================================================== -->
+  <div class="modal-overlay" id="reservationModal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="closeReservationModal" aria-label="Close modal">&times;</button>
+      <span class="section-eyebrow">MAPAAZ RESERVATIONS</span>
+      <h3 class="modal-title">Book Your Experience</h3>
+      <p class="modal-subtitle">Experience timeless luxury and gastronomy in the heart of the city.</p>
+
+      <!-- Booking Type Tabs -->
+      <div class="booking-tabs">
+        <button type="button" class="booking-tab-btn active" id="tabRoomBooking">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 19h20M2 8v11M22 8v11M4 14h16M4 8a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v6H4V8z"/></svg>
+          Room &amp; Suite
+        </button>
+        <button type="button" class="booking-tab-btn" id="tabTableBooking">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3"/></svg>
+          Restaurant Table
+        </button>
+      </div>
+
+      <!-- Room Reservation Form -->
+      <form id="reservationForm">
+        <div class="form-grid">
+          <!-- Room Type -->
+          <div class="form-group full-width">
+            <label class="form-label" for="resRoomSelect">Room Selection</label>
+            <select id="resRoomSelect" class="form-control" required>
+              <option value="Standard Room ($210/night)">Standard Room ($210 / Night)</option>
+              <option value="Deluxe Suite ($340/night)">Deluxe Suite ($340 / Night)</option>
+              <option value="Presidential Suite ($580/night)">Presidential Suite ($580 / Night)</option>
+            </select>
+          </div>
+
+          <!-- Dates -->
+          <div class="form-group">
+            <label class="form-label" for="resCheckIn">Check-in Date</label>
+            <input type="date" id="resCheckIn" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="resCheckOut">Check-out Date</label>
+            <input type="date" id="resCheckOut" class="form-control" required>
+          </div>
+
+          <!-- Guests -->
+          <div class="form-group">
+            <label class="form-label" for="resAdults">Adults</label>
+            <select id="resAdults" class="form-control">
+              <option value="1">1 Adult</option>
+              <option value="2" selected>2 Adults</option>
+              <option value="3">3 Adults</option>
+              <option value="4">4 Adults</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="resChildren">Children</label>
+            <select id="resChildren" class="form-control">
+              <option value="0">0 Children</option>
+              <option value="1" selected>1 Child</option>
+              <option value="2">2 Children</option>
+            </select>
+          </div>
+
+          <!-- Contact -->
+          <div class="form-group">
+            <label class="form-label" for="resName">Full Name</label>
+            <input type="text" id="resName" class="form-control" placeholder="Lady or Sir Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="resEmail">Email Address</label>
+            <input type="email" id="resEmail" class="form-control" placeholder="guest@example.com" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">Confirm Room Reservation</button>
+      </form>
+
+      <!-- Restaurant Table Reservation Form -->
+      <form id="tableReservationForm" style="display: none;">
+        <div class="form-grid">
+          <!-- Dining Preference -->
+          <div class="form-group full-width">
+            <label class="form-label" for="tableAreaSelect">Table Atmosphere &amp; Area</label>
+            <select id="tableAreaSelect" class="form-control" required>
+              <option value="Grand Dining Salon (Candlelit)">The Grand Dining Salon (Candlelit)</option>
+              <option value="Private VIP Dining Room">Private VIP Dining Room</option>
+              <option value="Sky Lounge Wine Terrace">Sky Lounge &amp; Wine Terrace</option>
+              <option value="Chef's Front Counter">Chef's Front Degustation Counter</option>
+            </select>
+          </div>
+
+          <!-- Date & Time -->
+          <div class="form-group">
+            <label class="form-label" for="diningDate">Dining Date</label>
+            <input type="date" id="diningDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="diningTime">Time Slot</label>
+            <select id="diningTime" class="form-control" required>
+              <option value="12:30 PM (Lunch)">12:30 PM (Lunch)</option>
+              <option value="01:30 PM (Lunch)">01:30 PM (Lunch)</option>
+              <option value="07:00 PM (Dinner)" selected>07:00 PM (Dinner)</option>
+              <option value="08:30 PM (Dinner)">08:30 PM (Dinner)</option>
+              <option value="10:00 PM (Late Dinner & Cocktails)">10:00 PM (Late Dinner &amp; Cocktails)</option>
+            </select>
+          </div>
+
+          <!-- Guests -->
+          <div class="form-group">
+            <label class="form-label" for="diningGuests">Party Size</label>
+            <select id="diningGuests" class="form-control">
+              <option value="2 Guests" selected>2 Guests (Romantic)</option>
+              <option value="4 Guests">4 Guests (Family/Friends)</option>
+              <option value="6 Guests">6 Guests</option>
+              <option value="8+ Guests (Private Salon)">8+ Guests (Private Salon)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="diningOccasion">Special Occasion</label>
+            <select id="diningOccasion" class="form-control">
+              <option value="Casual Fine Dining">Casual Fine Dining</option>
+              <option value="Anniversary / Romance">Anniversary / Romance</option>
+              <option value="Birthday Celebration">Birthday Celebration</option>
+              <option value="Business Dinner">Business Dinner</option>
+            </select>
+          </div>
+
+          <!-- Contact -->
+          <div class="form-group">
+            <label class="form-label" for="diningName">Full Name</label>
+            <input type="text" id="diningName" class="form-control" placeholder="Guest Name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="diningPhone">Phone Number</label>
+            <input type="tel" id="diningPhone" class="form-control" placeholder="+1 (555) 000-0000" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-modal-submit">Reserve Table Now</button>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       GOURMET DINING MENU MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="menuModal">
+    <div class="modal-container menu-modal-container">
+      <button class="modal-close-btn" id="closeMenuModal">&times;</button>
+      <span class="section-eyebrow">A LA CARTE &amp; TASTING MENU</span>
+      <h3 class="modal-title">The Mapaaz Culinary Collection</h3>
+      <p class="modal-subtitle">Curated with organic seasonal produce and artisanal craftsmanship.</p>
+
+      <!-- Category Filter Tabs -->
+      <div class="menu-category-tabs">
+        <button class="menu-tab-btn active" data-category="starters">Starters &amp; Raw Bar</button>
+        <button class="menu-tab-btn" data-category="mains">Chef's Main Courses</button>
+        <button class="menu-tab-btn" data-category="desserts">Desserts</button>
+        <button class="menu-tab-btn" data-category="cocktails">Cocktails &amp; Cellar</button>
+      </div>
+
+      <!-- Menu Items Container -->
+      <div class="menu-items-list" id="menuItemsContainer">
+        <!-- Default: Starters -->
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h5>Hokkaido Diver Scallops with Royal Osetra Caviar</h5>
+            <p>Pan-seared scallops, cauliflower mousseline, yuzu brown butter, crisp chives.</p>
+          </div>
+          <span class="menu-item-price">$38</span>
+        </div>
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h5>Winter Black Truffle &amp; Morel Mushroom Velouté</h5>
+            <p>Velvety soup with freshly shaved Périgord truffles, brioche croutons, crème fraîche.</p>
+          </div>
+          <span class="menu-item-price">$28</span>
+        </div>
+        <div class="menu-item-row">
+          <div class="menu-item-info">
+            <h5>Yellowfin Tuna Tartare &amp; Avocado Mousse</h5>
+            <p>Sashimi grade tuna, white truffle oil, toasted sesame, lotus root crisps.</p>
+          </div>
+          <span class="menu-item-price">$32</span>
+        </div>
+      </div>
+
+      <div style="margin-top: 30px; text-align: center;">
+        <button class="btn-modal-submit" id="reserveTableFromMenuBtn" style="max-width: 300px; margin: 0 auto;">
+          Reserve Table For This Menu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MAPAAZ STORY MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="storyModal">
+    <div class="modal-container" style="max-width: 600px;">
+      <button class="modal-close-btn" id="closeStoryModal">&times;</button>
+      <span class="section-eyebrow">OUR HERITAGE SINCE 1998</span>
+      <h3 class="modal-title">The Mapaaz Legacy</h3>
+      <p class="modal-subtitle">25+ Years of Unrivaled Hospitality &amp; Culinary Art</p>
+      <div style="font-size: 0.94rem; line-height: 1.8; color: var(--color-text-muted);">
+        <p style="margin-bottom: 16px;">
+          Founded in 1998 with an uncompromising vision for sophisticated comfort, Mapaaz has set the benchmark for luxury hospitality and haute gastronomy for more than two decades.
+        </p>
+        <p style="margin-bottom: 16px;">
+          With over 500 meticulously curated rooms and penthouses, an internationally acclaimed fine dining restaurant, and a world-renowned wellness sanctuary, every guest experience is an exquisite harmony of privacy, culinary delight, and personalized service.
+        </p>
+        <div style="padding: 16px; background: var(--color-bg-base); border-left: 3px solid var(--color-gold-primary); font-style: italic; margin-top: 20px;">
+          "True luxury is not merely an aesthetic; it is the art of feeling completely at peace and tasting perfection."
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HOTEL VIDEO MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="videoModal">
+    <div class="modal-container video-modal-container">
+      <button class="modal-close-btn" id="closeVideoModal">&times;</button>
+      <div class="video-frame-wrapper">
+        <iframe id="videoIframe" src="" title="Mapaaz Luxury Hotel Tour" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ROOM DETAILS MODAL
+       ========================================================================== -->
+  <div class="modal-overlay" id="roomDetailModal">
+    <div class="modal-container" style="max-width: 650px;">
+      <button class="modal-close-btn" id="closeRoomDetailModal">&times;</button>
+      <span class="section-eyebrow" id="roomDetailEyebrow">SUITE SHOWCASE</span>
+      <h3 class="modal-title" id="roomDetailTitle">Standard Room</h3>
+      <p class="modal-subtitle" id="roomDetailPrice">$210 / Night</p>
+      <div style="border-radius: 6px; overflow: hidden; height: 260px; margin-bottom: 20px;">
+        <img id="roomDetailImg" src="" alt="Room detail" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      <p id="roomDetailDesc" style="font-size: 0.92rem; line-height: 1.7; color: var(--color-text-muted); margin-bottom: 24px;">
+        Experience bespoke comfort, soundproof panoramic windows, custom Italian bedding, and intuitive smart-room controls.
+      </p>
+      <button class="btn-modal-submit" id="bookThisRoomFromDetail">Proceed to Book</button>
+    </div>
+  </div>
+
+  <!-- Toast Alert -->
+  <div class="toast-notice" id="toastNotice">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b88a58" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span id="toastMessage">Reservation confirmed successfully!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
