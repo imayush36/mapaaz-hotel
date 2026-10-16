@@ -629,91 +629,243 @@
     </section>
 
     <!-- ==========================================================================
-         LOCATION & CONTACT SECTION (TAMKUHI RAJ, KUSHINAGAR)
+         RADAR LOCATION & CONNECTIVITY SECTION (TAMKUHI RAJ, KUSHINAGAR)
          ========================================================================== -->
     <section class="location-contact-section" id="location">
       <div class="container">
-        <div class="location-grid">
-          <!-- Left Info Card -->
-          <div class="location-info-card reveal">
-            <span class="section-eyebrow">LOCATION &amp; CONTACT</span>
-            <h2 class="location-title">Visit Mapaaz Hotel &amp; Restaurant</h2>
-            
-            <div class="location-details-list">
-              <!-- Address -->
-              <div class="location-item">
-                <div class="location-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                    <circle cx="12" cy="10" r="3"></circle>
-                  </svg>
-                </div>
-                <div>
-                  <div class="location-item-label">Address</div>
-                  <div class="location-item-val">
-                    Tamkuhi Raj , Kushinagar , Uttar Pradesh
-                  </div>
-                </div>
-              </div>
+        <!-- Section Header -->
+        <div class="radar-section-header reveal">
+          <span class="section-eyebrow">LOCATION &amp; CONNECTIVITY</span>
+          <h2 class="radar-section-title">Strategic Regional Hub</h2>
+          <p class="radar-section-desc">
+            Centrally positioned in Tamkuhi Raj, Kushinagar, Uttar Pradesh with effortless access to national transit hubs, cultural heritage landmarks, and regional express corridors.
+          </p>
+        </div>
 
-              <!-- Phone -->
-              <div class="location-item">
-                <div class="location-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                  </svg>
-                </div>
-                <div>
-                  <div class="location-item-label">Direct Helpline &amp; Reservations</div>
-                  <div class="location-item-val">
-                    <a href="tel:+917570070035">+91 75700 70035</a>
-                  </div>
-                </div>
-              </div>
+        <!-- Radar Layout Wrapper -->
+        <div class="radar-layout-wrapper reveal reveal-delay-1">
+          <!-- The Radar Card -->
+          <div class="radar-display-card" id="radarCard">
+            <!-- Background Grid Lines -->
+            <div class="radar-grid-bg"></div>
 
-              <!-- Email -->
-              <div class="location-item">
-                <div class="location-item-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                  </svg>
+            <!-- Concentric Range Circles -->
+            <div class="radar-rings">
+              <div class="radar-ring ring-1"></div>
+              <div class="radar-ring ring-2"></div>
+              <div class="radar-ring ring-3"></div>
+            </div>
+
+            <!-- Crosshairs -->
+            <div class="radar-crosshair-h"></div>
+            <div class="radar-crosshair-v"></div>
+
+            <!-- Rotating Radar Beam Sweep -->
+            <div class="radar-sweep-beam"></div>
+
+            <!-- Active Connecting Beam Line -->
+            <div class="radar-active-line" id="radarActiveLine"></div>
+
+            <!-- Center Hotel Hub Badge -->
+            <div class="radar-center-hub">
+              <svg class="radar-center-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span class="radar-center-name">MAPAAZ HOTEL</span>
+              <span class="radar-center-sub">Tamkuhi Raj</span>
+            </div>
+
+            <!-- Orbital Landmark Nodes (Angles & Coordinates) -->
+            <!-- 1. Top: Kushinagar Temple (Default Active) -->
+            <div class="radar-node active" data-index="0" data-deg="0" style="top: 8%; left: 50%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
                 </div>
-                <div>
-                  <div class="location-item-label">Inquiries &amp; Dining</div>
-                  <div class="location-item-val">
-                    <a href="mailto:reservations@mapaazhotel.com">reservations@mapaazhotel.com</a>
-                  </div>
-                </div>
+                <div class="radar-node-badge">KUSHINAGAR TEMPLE &bull; 25M</div>
               </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="location-actions">
-              <a href="tel:+917570070035" class="btn-contact-call">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>Call 7570070035</span>
-              </a>
-              <a href="https://maps.google.com/?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer" class="btn-contact-direction">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
-                <span>Get Directions</span>
-              </a>
-              <a href="https://wa.me/917570070035?text=Hello%20Mapaaz%20Hotel,%20I%20would%20like%20to%20inquire%20about%20booking%20and%20dining." target="_blank" rel="noopener noreferrer" class="btn-contact-whatsapp">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.99.54 1.785.836 2.796.837 3.181 0 5.767-2.586 5.768-5.766.001-3.18-2.585-5.824-5.768-5.824zm3.387 8.188c-.144.405-.837.774-1.17.824-.312.045-.634.053-.996-.063-.238-.076-.554-.19-1.002-.384-1.902-.823-3.136-2.757-3.23-2.883-.095-.127-.775-1.031-.775-1.966 0-.935.489-1.394.663-1.584.175-.19.381-.238.508-.238.127 0 .254.001.365.006.118.005.277-.045.433.329.16.386.544 1.328.591 1.425.048.095.08.207.016.334-.064.127-.095.207-.19.318-.095.111-.2.248-.286.334-.095.095-.195.198-.084.389.111.19.493.813 1.058 1.317.728.649 1.341.85 1.531.945.19.095.302.08.413-.048.111-.127.476-.556.603-.746.127-.19.254-.159.429-.095.175.064 1.11.523 1.301.618.19.095.317.143.365.222.048.079.048.46-.096.865z"/></svg>
-                <span>WhatsApp</span>
-              </a>
+            <!-- 2. Top-Right: Airport -->
+            <div class="radar-node" data-index="1" data-deg="38" style="top: 15%; left: 76%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+                </div>
+                <div class="radar-node-badge">AIRPORT &bull; 20M</div>
+              </div>
+            </div>
+
+            <!-- 3. Right: University/College -->
+            <div class="radar-node" data-index="2" data-deg="75" style="top: 36%; left: 86%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div class="radar-node-badge">MMMUT / PG COLLEGE &bull; 15M</div>
+              </div>
+            </div>
+
+            <!-- 4. Bottom-Right: Hospital / AIIMS -->
+            <div class="radar-node" data-index="3" data-deg="130" style="top: 66%; left: 77%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                </div>
+                <div class="radar-node-badge">AIIMS / CHC &bull; 18M</div>
+              </div>
+            </div>
+
+            <!-- 5. Bottom: Lake & Recreation -->
+            <div class="radar-node" data-index="4" data-deg="180" style="top: 86%; left: 50%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 18c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0 3 1.5 4.5 0"/><path d="M12 2l4 7H8z"/></svg>
+                </div>
+                <div class="radar-node-badge">NOUKA VIHAR &bull; 12M</div>
+              </div>
+            </div>
+
+            <!-- 6. Bottom-Left: Commercial Plaza -->
+            <div class="radar-node" data-index="5" data-deg="225" style="top: 72%; left: 24%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                </div>
+                <div class="radar-node-badge">CITY MALL &bull; 10M</div>
+              </div>
+            </div>
+
+            <!-- 7. Left: Bus Stand / Highway -->
+            <div class="radar-node" data-index="6" data-deg="265" style="top: 48%; left: 12%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="15" rx="3"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M3 10h18M7 6h.01M17 6h.01"/></svg>
+                </div>
+                <div class="radar-node-badge">BUS STAND &bull; 15M</div>
+              </div>
+            </div>
+
+            <!-- 8. Top-Left: Railway Station -->
+            <div class="radar-node" data-index="7" data-deg="312" style="top: 18%; left: 20%; transform: translate(-50%, 0);">
+              <div class="radar-node-inner">
+                <div class="radar-node-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16M12 3v8M8 19l-3 3M16 19l3 3"/><circle cx="8" cy="15" r="1.5"/><circle cx="16" cy="15" r="1.5"/></svg>
+                </div>
+                <div class="radar-node-badge">RAILWAY STATION &bull; 15M</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Open In Google Maps Button -->
+          <a href="https://maps.google.com/?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh" target="_blank" rel="noopener noreferrer" class="btn-open-maps">
+            <span>OPEN IN GOOGLE MAPS</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+
+          <!-- Transit Distance Cards Stack -->
+          <div class="transit-cards-stack">
+            <!-- 1. Airport -->
+            <div class="transit-card-item" data-index="1" data-deg="38">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">Mahayogi Gorakhnath / Kushinagar Airport</h4>
+                  <p class="transit-card-desc">Direct flight connectivity to major Indian metros</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">20 MIN</span>
+            </div>
+
+            <!-- 2. Railway Station -->
+            <div class="transit-card-item" data-index="7" data-deg="312">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16M12 3v8M8 19l-3 3M16 19l3 3"/><circle cx="8" cy="15" r="1.5"/><circle cx="16" cy="15" r="1.5"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">Gorakhpur / Tamkuhi Raj Railway Station</h4>
+                  <p class="transit-card-desc">Conveniently close by with nationwide express connections</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">15 MIN</span>
+            </div>
+
+            <!-- 3. Bus Stand -->
+            <div class="transit-card-item" data-index="6" data-deg="265">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="15" rx="3"/><circle cx="7" cy="18" r="2"/><circle cx="17" cy="18" r="2"/><path d="M3 10h18M7 6h.01M17 6h.01"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">Gorakhpur / Tamkuhi Bus Stand (Kachahri &amp; NH-28)</h4>
+                  <p class="transit-card-desc">Central interstate and regional roadways bus terminal</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">15 MIN</span>
+            </div>
+
+            <!-- 4. Nausadh Chauraha / Expressway -->
+            <div class="transit-card-item" data-index="5" data-deg="225">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">Nausadh Bus Stand &amp; Chauraha Junction</h4>
+                  <p class="transit-card-desc">Major southern highway junction &amp; express transit hub</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">20 MIN</span>
+            </div>
+
+            <!-- 5. Gorakhnath Temple / Kushinagar -->
+            <div class="transit-card-item active" data-index="0" data-deg="0">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">Gorakhnath Temple &amp; Kushinagar Stupa</h4>
+                  <p class="transit-card-desc">The spiritual, historic and cultural heart of the region</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">25 MIN</span>
+            </div>
+
+            <!-- 6. AIIMS / Super Speciality Care -->
+            <div class="transit-card-item" data-index="3" data-deg="130">
+              <div class="transit-card-left">
+                <div class="transit-card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="4"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                </div>
+                <div>
+                  <h4 class="transit-card-title">AIIMS Hospital &amp; Medical Centre</h4>
+                  <p class="transit-card-desc">Premier regional multi-speciality tertiary healthcare</p>
+                </div>
+              </div>
+              <span class="transit-time-pill">18 MIN</span>
             </div>
           </div>
 
-          <!-- Right Map Embed -->
-          <div class="map-embed-wrapper reveal reveal-delay-1">
-            <iframe 
-              src="https://maps.google.com/maps?q=Tamkuhi+Raj,+Kushinagar,+Uttar+Pradesh&t=&z=14&ie=UTF8&iwloc=&output=embed" 
-              title="Mapaaz Luxury Hotel Location Map" 
-              loading="lazy" 
-              allowfullscreen>
-            </iframe>
+          <!-- Direct Helpline Contact Badge -->
+          <div style="margin-top: 15px; display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: rgba(184, 138, 88, 0.08); border: 1px dashed var(--color-border-gold); border-radius: 10px;">
+            <div style="font-size: 0.84rem; color: rgba(255, 255, 255, 0.8);">
+              📍 <strong style="color: #ffffff;">Tamkuhi Raj , Kushinagar , Uttar Pradesh</strong>
+            </div>
+            <a href="tel:+917570070035" style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: var(--color-gold-light);">
+              📞 +91 75700 70035
+            </a>
           </div>
+
         </div>
       </div>
     </section>

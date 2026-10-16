@@ -546,6 +546,46 @@ document.addEventListener('DOMContentLoaded', () => {
     rootMargin: '0px 0px -50px 0px'
   });
 
-  reveals.forEach(el => revealObserver.observe(el));
+  // --- 7. RADAR LOCATION & TRANSIT SYNC ---
+  const radarNodes = document.querySelectorAll('.radar-node');
+  const transitCards = document.querySelectorAll('.transit-card-item');
+  const radarActiveLine = document.getElementById('radarActiveLine');
+
+  function setActiveLocation(index, deg) {
+    radarNodes.forEach(node => {
+      const isMatch = node.getAttribute('data-index') === String(index);
+      node.classList.toggle('active', isMatch);
+    });
+
+    transitCards.forEach(card => {
+      const isMatch = card.getAttribute('data-index') === String(index);
+      card.classList.toggle('active', isMatch);
+    });
+
+    if (radarActiveLine && deg !== undefined) {
+      radarActiveLine.style.transform = `translate(-50%, -100%) rotate(${deg}deg)`;
+    }
+  }
+
+  transitCards.forEach(card => {
+    const idx = card.getAttribute('data-index');
+    const deg = card.getAttribute('data-deg');
+
+    card.addEventListener('mouseenter', () => setActiveLocation(idx, deg));
+    card.addEventListener('click', () => setActiveLocation(idx, deg));
+  });
+
+  radarNodes.forEach(node => {
+    const idx = node.getAttribute('data-index');
+    const deg = node.getAttribute('data-deg');
+
+    node.addEventListener('click', () => {
+      setActiveLocation(idx, deg);
+      const matchingCard = document.querySelector(`.transit-card-item[data-index="${idx}"]`);
+      if (matchingCard) {
+        matchingCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    });
+  });
 
 });
