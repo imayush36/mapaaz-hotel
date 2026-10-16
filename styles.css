@@ -1460,26 +1460,25 @@ ul {
 /* Radar Layout Wrapper */
 .radar-layout-wrapper {
   max-width: 680px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Radar Display Card */
+/* Radar Display Card - Definite Height, Never Collapses */
 .radar-display-card {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1.05;
-  max-height: 600px;
-  background: radial-gradient(circle at center, #141b20 0%, #0a0e11 100%);
-  border: 1px solid rgba(184, 138, 88, 0.22);
+  height: 520px;
+  min-height: 480px;
+  background: radial-gradient(circle at center, #151c23 0%, #080c0f 100%);
+  border: 1px solid rgba(184, 138, 88, 0.35);
   border-radius: 20px;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), inset 0 0 40px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), inset 0 0 50px rgba(0, 0, 0, 0.8);
   overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
 }
 
 /* Background Grid Lines */
@@ -1487,8 +1486,8 @@ ul {
   position: absolute;
   inset: 0;
   background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
   background-size: 40px 40px;
   background-position: center center;
   pointer-events: none;
@@ -1507,45 +1506,44 @@ ul {
 .radar-ring {
   position: absolute;
   border-radius: 50%;
-  border: 1px dashed rgba(184, 138, 88, 0.22);
+  border: 1px dashed rgba(184, 138, 88, 0.35);
 }
 
 .radar-ring.ring-1 {
   width: 78%;
   height: 78%;
-  border-style: dashed;
+  border: 1px dashed rgba(184, 138, 88, 0.38);
 }
 
 .radar-ring.ring-2 {
   width: 54%;
   height: 54%;
-  border: 1px solid rgba(184, 138, 88, 0.18);
+  border: 1px solid rgba(184, 138, 88, 0.32);
 }
 
 .radar-ring.ring-3 {
   width: 30%;
   height: 30%;
-  border: 1px solid rgba(184, 138, 88, 0.25);
+  border: 1px solid rgba(184, 138, 88, 0.45);
 }
 
 /* Crosshairs */
 .radar-crosshair-h {
   position: absolute;
   top: 50%;
-  left: 5%;
-  right: 5%;
+  left: 4%;
+  right: 4%;
   height: 1px;
-  background: dashed;
-  border-top: 1px dashed rgba(255, 255, 255, 0.07);
+  border-top: 1px dashed rgba(255, 255, 255, 0.12);
 }
 
 .radar-crosshair-v {
   position: absolute;
   left: 50%;
-  top: 5%;
-  bottom: 5%;
+  top: 4%;
+  bottom: 4%;
   width: 1px;
-  border-left: 1px dashed rgba(255, 255, 255, 0.07);
+  border-left: 1px dashed rgba(255, 255, 255, 0.12);
 }
 
 /* Rotating Radar Beam Sweep */
@@ -2250,9 +2248,9 @@ ul {
    ANIMATIONS & SCROLL OBSERVERS
    ========================================================================== */
 .reveal {
-  opacity: 0;
-  transform: translateY(35px);
-  transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .reveal.active {
